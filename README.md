@@ -25,7 +25,7 @@ smart contracts NFT \mintv1\src\Nftcontract.sol
 smart contracts TOKEN \mintv1\src\Tokencontract.sol
 0x6C261313019D264846feB462A9B8c734B7D9Fa11
 -------------------------------------------
-LIVE DEMO : https://testnetkyoto.vercel.app/
+LIVE DEMO : ---
 -------------------------------------------
 ![Screenshot 2023-12-16 161312](https://github.com/retrunv0id/TESTNETKYOTO/assets/45552788/d01075dd-4bdf-4035-a323-4da59569be19)
 ![Screenshot 2023-12-16 152033](https://github.com/retrunv0id/TESTNETKYOTO/assets/45552788/83b21277-5b6d-449f-b959-6b87c55d3097)
