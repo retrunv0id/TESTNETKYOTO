@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Comfortaa", cursive;
+  color: #76ff06;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("https://wallpapercave.com/wp/wp8855495.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.marquee {
+  font-family: sans-serif, "Press Start 2P";
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  background: #232776;
+  padding: 0.2em 0;
+  color: #e2e2e2;
+  box-shadow: 2px 2px 10px #232776;
+  overflow: hidden;
+  position: relative;
+  animation: text-line-glow 2s linear infinite;
+}
+@keyframes text-line-glow {
+  0% {
+    text-shadow: 0px 0px 0px #00fffb;
+  }
+  50% {
+    text-shadow: 0px 0px 4px #00fffb;
+  }
+}
+.marquee:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: repeating-linear-gradient(
+      0deg,
+      #23277600,
+      #23277600 1px,
+      #040a2444 1px,
+      #040a2444 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #23277600,
+      #23277600 2px,
+      #040a2444 2px,
+      #040a2444 3px
+    );
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.marquee:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  animation: line-glow 3.5s linear infinite;
+  animation-timing-function: steps(50);
+}
+@keyframes line-glow {
+  0% {
+    right: -2%;
+    background-color: #29cac8;
+    box-shadow: 0 0 20px #ffd2fe00;
+  }
+  50% {
+    right: 102%;
+    background-color: #29cac8;
+    box-shadow: 0 0 30px #ffd2feff;
+  }
+}
+
+h1 {
+  font-family: "Water Brush", cursive;
+  font-weight: normal;
+  font-synthesis: none;
+  color: #086866;
+  animation: skew-glitch 7s step-end infinite;
+}
+
+@keyframes skew-glitch {
+  0% {
+    transform: skew(83deg, 2deg) scaleY(0.25);
+  }
+  27% {
+    transform: skew(-83deg, 2deg) scaleY(0.25);
+  }
+  66% {
+    transform: skew(93deg, -2deg) scaleY(0.25);
+  }
+  91% {
+    transform: skew(-89deg, -2deg) scaleY(0.25);
+  }
+  1%,
+  28%,
+  67%,
+  92% {
+    transform: none;
+  }
+}

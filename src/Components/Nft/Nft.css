@@ -1,0 +1,78 @@
+.wrapper {
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.product-info {
+  width: 100%;
+  border: 1px solid transparent;
+  background-color: #ba1dcf50;
+  border-color: #c5bdbd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-text h1 {
+  font-size: 24px;
+  color: #76ff06;
+  text-align: center;
+}
+
+.product-text h2 {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d30b0b;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  height: 30px;
+  font-family: "Suranna", serif;
+  font-size: 24px;
+}
+
+.connectButton {
+  border-radius: 50px;
+  border: 1px solid transparent;
+  height: 50px;
+  width: 150px;
+  margin: 10px 0;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #0f67ec;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  border-color: #beeb1e;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (max-width: 78px) {
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-info {
+    width: 100%;
+    border-radius: 7px;
+    margin: 10px;
+  }
+}
